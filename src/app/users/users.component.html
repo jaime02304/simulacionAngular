@@ -1,0 +1,8 @@
+<ul style="display: flex; justify-content: center; align-items: center;">
+  @for (usuario of users; track $index) {
+  <li style="display: block;">
+     Nombre Completo --> {{ usuario.first_name }}  {{ usuario.last_name }} / Email --> {{ usuario.email }} 
+    <img src="{{usuario.avatar}}">
+  </li>
+  }
+</ul>
